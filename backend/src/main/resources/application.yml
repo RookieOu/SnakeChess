@@ -1,0 +1,9 @@
+spring:
+  main:
+    banner-mode: off
+  profiles:
+    active: dev
+    include: lifecycle
+
+server:
+  port: 13000
