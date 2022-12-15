@@ -8,16 +8,16 @@ import java.util.Map;
  * @date 2022/12/16 01:09
  */
 public class Record {
-    private final Map<Integer, Point> points;
+    private final Map<Integer, Integer> points;
 
     List<Integer> track;
 
-    public Record(Map<Integer, Point> points, List<Integer> track) {
+    public Record(Map<Integer, Integer> points, List<Integer> track) {
         this.points = points;
         this.track = track;
     }
 
-    public Map<Integer, Point> getPoints() {
+    public Map<Integer, Integer> getPoints() {
         return points;
     }
 

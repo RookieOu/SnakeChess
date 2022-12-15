@@ -56,7 +56,9 @@ public class PlayerData {
     }
 
     public void saveTrack() {
-        getRecord().put(record.size() + 1, new Record(new HashMap<>(board.getPoints()), new ArrayList<>(getTrack())));
+        Map<Integer, Integer> recordMap = new HashMap<>();
+        board.getPoints().forEach((k, v) -> recordMap.put(k, v.getDestination()));
+        getRecord().put(record.size() + 1, new Record(recordMap, new ArrayList<>(getTrack())));
         getTrack().clear();
     }
 }

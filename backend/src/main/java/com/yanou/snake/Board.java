@@ -14,7 +14,7 @@ public class Board {
 
     public Board() {
         points = new HashMap<>();
-        reStart(10);
+        reStart(5);
     }
 
     public void reStart(int n) {
